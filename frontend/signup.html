@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodCentral Studio | Sign Up</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --deep-blue: #002C54;
+      --bright-red: #C5001A;
+      --pale-pink: #FDF6F6;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center bg-[var(--pale-pink)]" style="background-image: url('https://images.unsplash.com/photo-1449034446853-66c86144b0ad?ixlib=rb-4.1.0&auto=format&fit=crop&q=60&w=620'); background-repeat: no-repeat; background-size: cover;">
+    
+  <div class="bg-white shadow-2xl rounded-2xl p-8 w-[90%] max-w-md border-t-4 border-[var(--bright-red)]">
+    <h1 class="text-3xl font-bold text-center text-[var(--deep-blue)] mb-6">Create Your CodCentral Account</h1>
+    <form id="signupForm" class="flex flex-col space-y-4">
+      <input 
+        type="text" 
+        placeholder="Enter your name" 
+        required 
+        class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--deep-blue)]"
+      >
+      <input 
+        type="email" 
+        placeholder="Enter your email" 
+        required 
+        class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--deep-blue)]"
+      >
+      <input 
+        type="password" 
+        placeholder="Enter your password" 
+        required 
+        class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--deep-blue)]"
+      >
+      <input 
+        type="password" 
+        placeholder="Confirm your password" 
+        required 
+        class="p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--deep-blue)]"
+      >
+      <button 
+        type="submit" 
+        class="bg-[var(--bright-red)] text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition duration-300"
+      >
+        Sign Up
+      </button>
+      <p class="text-center text-gray-600 text-sm mt-4">
+        Already have an account? 
+        <a href="login.html" class="text-[var(--bright-red)] font-semibold hover:underline">
+          Login here
+        </a>
+      </p>
+    </form>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
